@@ -1,6 +1,6 @@
 # 3D Mapping dengan Drone (CoppeliaSim + Python)
 
-UTS Sistem Robotika (SRO) Fall Season  
+ETS Sistem Robotika (SRO) Fall Season  
 **Nama:** Oktavian Rifki Danendra  
 **NRP:** 5022231107
 
