@@ -99,11 +99,11 @@ Semua pengaturan ada di bagian atas skrip. Yang paling sering diubah:
 | Parameter | Default | Fungsi |
 |---|---|---|
 | `PATH_MODE` | `"figure8"` | `"figure8"` atau `"lawnmower"` |
-| `FIG8_LAPS` | 5 | Jumlah putaran angka 8 |
+| `FIG8_LAPS` | 3  | Jumlah putaran angka 8 |
 | `FIG8_A`, `FIG8_B` | 2,0 / 1,2 | Setengah panjang dan lebar angka 8 (m) |
 | `ARENA_HALF` | 2,0 | Setengah lebar area sapuan lawnmower (m) |
-| `LANE_SPACING` | 1,0 | Jarak antar lajur lawnmower (m). Pilih nilai yang membagi 2 x `ARENA_HALF` dengan pas, misalnya 0,5 |
-| `ALTITUDE` | 1,5 | Ketinggian terbang (m) |
+| `LANE_SPACING` | 0,3 | Jarak antar lajur lawnmower (m). Pilih nilai yang membagi 2 x `ARENA_HALF` dengan pas, misalnya 0,5 |
+| `ALTITUDE` | 0,8 | Ketinggian terbang (m) |
 | `SAFE_DIST` | 0,9 | Jarak mulai menghindar dari penghalang (m). Turunkan ke sekitar 0,5 kalau jalur terlalu bergelombang |
 | `VOXEL_SIZE` | 0,10 | Ukuran voxel (m) |
 | `SCAN_EVERY` | 6 | Ambil data sensor tiap N langkah simulasi |
