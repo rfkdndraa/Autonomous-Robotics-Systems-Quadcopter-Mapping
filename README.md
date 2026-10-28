@@ -29,8 +29,6 @@ Fitur tambahan:
 - **Dua pola terbang:** angka 8 berulang (default 5 putaran) atau lawnmower yang menyapu seluruh area.
 - **Obstacle avoidance:** drone menghindari semua shape di scene (kecuali lantai) memakai potential field
   dan `sim.checkDistance`. Target dikembalikan ke garis lajur setelah menghindar.
-- **Deteksi macet:** waypoint yang tidak bisa dicapai dilewati otomatis.
-- **Pemilihan sumbu kamera otomatis:** mencegah peta tercermin (objek terduplikasi atau memanjang).
 - **Preflight check:** skrip menolak berjalan kalau scanner menumpuk di badan drone.
 
 ## Sensor
