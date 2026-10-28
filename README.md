@@ -70,10 +70,6 @@ Skrip mengharapkan objek berikut ada di scene (path bisa diubah di bagian konfig
 | `/Quadcopter/fast3DLaserScanner` | Scanner, **harus menjadi anak Quadcopter** |
 | Cuboid, Cylinder, Cone, dinding | Penghalang yang dipetakan |
 
-Penting: scanner harus diletakkan **di bawah badan drone**, tidak tepat di pusatnya. Kalau posisinya
-sama dengan drone, badan keduanya bertabrakan dan drone terlempar saat simulasi mulai. Skrip akan
-berhenti dengan pesan error kalau jaraknya kurang dari 5 cm. Simpan scene setelah mengatur posisi scanner.
-
 ## Cara menjalankan
 
 1. Buka scene `5022231107_Quadcopter_Scene.ttt` di CoppeliaSim. Pastikan hanya satu tab scene yang terbuka dan simulasi belum berjalan.
