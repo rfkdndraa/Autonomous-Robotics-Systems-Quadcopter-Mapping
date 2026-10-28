@@ -36,8 +36,6 @@ Fitur tambahan:
 ## Sensor
 
 Sensor yang dipakai adalah model **3D laser scanner Fast** bawaan CoppeliaSim (`fast3DLaserScanner`).
-Pada scene ini terbaca sebagai satu vision sensor 64x64 piksel, FOV 45°, jangkauan 0,05 sampai 5 m
-(nilai pastinya dicetak di terminal saat skrip dijalankan).
 
 Posisi dan orientasi sensor diatur di scene: scanner menempel sebagai anak `Quadcopter`, diletakkan sedikit
 di bawah badan drone, dan menghadap ke bawah. Karena drone melintas dari berbagai arah, lantai (ground),
@@ -80,11 +78,11 @@ berhenti dengan pesan error kalau jaraknya kurang dari 5 cm. Simpan scene setela
 
 ## Cara menjalankan
 
-1. Buka scene `QuadETS.ttt` di CoppeliaSim. Pastikan hanya satu tab scene yang terbuka dan simulasi belum berjalan.
+1. Buka scene `5022231107_Quadcopter_Scene.ttt` di CoppeliaSim. Pastikan hanya satu tab scene yang terbuka dan simulasi belum berjalan.
 2. Jalankan skrip dari terminal:
 
    ```bash
-   python drone_3d_mapping.py
+   python 5022231107_Quadcopter_Mapping.py
    ```
 
 3. Skrip memulai simulasi, menerbangkan drone, menghentikan simulasi, lalu menampilkan peta 3D dan peta 2D.
@@ -116,9 +114,6 @@ Semua pengaturan ada di bagian atas skrip. Yang paling sering diubah:
 | `MIN_NEIGHBORS` | 2 | Voxel dengan tetangga lebih sedikit dari ini dibuang. 0 untuk mematikan |
 | `GROUND_Z` | 0,15 | Voxel dengan z di bawah ini dianggap tanah |
 
-Cakupan scan dari ketinggian h kira-kira 0,83 x h lebar (FOV 45°), jadi `LANE_SPACING` sebaiknya
-tidak lebih besar dari itu.
-
 ## Pemecahan masalah
 
 | Gejala | Penyebab dan solusi |
@@ -132,12 +127,3 @@ tidak lebih besar dari itu.
 | Titik tersebar jauh di bawah lantai | Nilai depth tidak sesuai satuan. Coba `DEPTH_IN_METERS = False` |
 | Muncul titik melayang | Noise sensor atau bagian drone. Naikkan `MIN_RANGE` atau `MIN_NEIGHBORS` |
 | Simulasi diam setelah skrip berhenti paksa | Mode stepping tertinggal. Hentikan simulasi lalu mulai ulang CoppeliaSim |
-
-## Struktur repositori
-
-```
-.
-├── drone_3d_mapping.py   # skrip utama
-├── QuadETS.ttt           # scene CoppeliaSim
-└── README.md
-```
