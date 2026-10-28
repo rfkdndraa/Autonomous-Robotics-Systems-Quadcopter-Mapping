@@ -91,8 +91,6 @@ berhenti dengan pesan error kalau jaraknya kurang dari 5 cm. Simpan scene setela
 |---|---|
 | `hasil_3d_map.png` | Peta 3D voxel berwarna menurut ketinggian dengan jalur drone |
 | `hasil_2d_map.png` | Peta 2D tampak atas dengan jalur drone |
-| `pointcloud_raw.npy` | Point cloud mentah (N x 3, meter) |
-| `pointcloud_voxel.npy` | Point cloud setelah voxel dan filter noise |
 
 ## Konfigurasi
 
